@@ -21,5 +21,10 @@ const app = Vue.createApp({
             sizes: [3, 4, 6, 8, 9],
             // sizes: []
         }
+    },
+    methods: {
+        addToCart() {
+            this.cart += 1
+        }
     }
 })

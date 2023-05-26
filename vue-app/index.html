@@ -26,18 +26,7 @@
             </ul>
 
             <div class="" v-for="variant in variants" :key="variant.id"> {{ variant.color }}</div>
-
-            <div class="" v-if="sizes.length > 0">
-              <p>Here are the available sizes</p>
-              <ul>
-                <li v-for="size in sizes">
-                  We have size {{ size }}
-                </li>
-              </ul>
-            </div>
-            <div class="" v-else>
-              <p>No sizes available</p>
-            </div>
+            <button v-on:click="addToCart" class="button">Add to Cart</button>
           </div>
         </div>
       </div>
