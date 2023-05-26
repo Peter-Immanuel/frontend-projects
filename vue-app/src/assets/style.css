@@ -91,4 +91,8 @@ img {
 .product-image, .product-info {
     width: 50%;
 }
+
+.out-of-stock-img {
+    opacity: 0.5;
+  }
   
