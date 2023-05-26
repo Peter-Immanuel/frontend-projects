@@ -21,15 +21,16 @@
           </div>
           <div class="product-info">
             <h1>{{ title }}</h1>
+            <p>{{ productOnSale }}</p>
             <ul>
               <li v-for="detail in details"> {{ detail }} </li>
             </ul>
 
             <div 
               class="color-circle" 
-              v-for="variant in variants" 
+              v-for="(variant,index) in variants" 
               :key="variant.id" 
-              @mouseover="updateImage(variant.image)"
+              @mouseover="updateVariant(index)"
               :style="{ backgroundColor: variant.color }"
             > 
             </div>
