@@ -18,12 +18,18 @@ img {
     box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    /* gap: 1vmin; */
+}
+
 .button {
     margin: 30px;
     background-color: #39495c;
     border-radius: 5px;
     font-size: 18px;
-    width: 160px;
+    /* width: 1px; */
     height: 60px;
     color: white;
     padding: 20px;

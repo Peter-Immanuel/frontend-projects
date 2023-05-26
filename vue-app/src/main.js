@@ -12,19 +12,23 @@ const app = Vue.createApp({
         return {
             cart: 0,
             product: "Socks",
-            image: "./src/assets/images/socks_green.jpg",
             details: ["50% cotton", "30% wool", "20% polyester"],
+            image: "./src/assets/images/socks_green.jpg",
             variants: [
-                {id: 2234, color: "green"},
-                {id: 2235, color: "blue"},
+                {id: 2234, color: "green", image: "./src/assets/images/socks_green.jpg"},
+                {id: 2235, color: "blue", image: "./src/assets/images/socks_blue.jpg"},
             ],
-            sizes: [3, 4, 6, 8, 9],
-            // sizes: []
         }
     },
     methods: {
         addToCart() {
             this.cart += 1
+        },
+        removeFromCart(){
+            this.cart -= 1
+        },
+        updateImage(variantImage) {
+            this.image = variantImage
         }
     }
 })
